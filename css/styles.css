@@ -1,106 +1,26 @@
-/* B1: Global stil sıfırlama */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* B2: Margin dışarı taşmamalı */
-ul,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-block: 0;
-}
-/* B5: Margin ve padding düzeni */
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  margin: 0;
-}
-
-/* B6 & B8 & B9: container yardımcı sınıfı */
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* B10: Flex sadece gerektiğinde */
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header nav ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-}
-
-.contact-info ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-}
-
-/* B11: Boyutlar tasarıma uygun olmalı */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* B12: Yükseklik içeriğe göre */
-section,
-li,
-article,
-div {
-  height: auto;
-}
-
-/* B13: Başlık alt kenarlığı */
-header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
-/* B14: Bölümler üst üste */
-main > section {
-  margin: 0;
-}
-
-/* B15: .section padding */
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-/* B16: Portföy kartlarının alt kenarlığı */
-.portfolio-list li {
-  border-bottom: 1px solid #e7e9fc;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
 /* Header genel stiller */
+.header-container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+}
+.nav {
+  'display: flex;
+  align-items: center;
+}
+.nav .logo {
+  margin-right: 76px;
+}
+.nav .nav-list {
+  display: flex;
+  gap:40px;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -121,6 +41,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -131,6 +52,8 @@ body {
 /* Address kısmı */
 .contact-info {
   font-style: normal;
+  display:flex;
+  gap:40px;
 }
 
 .contact-link {
