@@ -5,19 +5,20 @@ body {
 }
 /* Header genel stiller */
 .header-container {
+  border-bottom: 1px solid #e7e9fc
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
 }
-.nav {
+.header-nav {
   'display: flex;
   align-items: center;
 }
-.nav .logo {
+.header-container .header-nav .logo {
   margin-right: 76px;
 }
-.nav .nav-list {
+.header-container .header-nav .nav-list {
   display: flex;
   gap:40px;
 }
@@ -50,7 +51,7 @@ body {
 }
 
 /* Address kısmı */
-.contact-info {
+.header-container .contact-info {
   font-style: normal;
   display:flex;
   gap:40px;
