@@ -75,7 +75,7 @@ body {
   padding: 188px 0;
 }
 
-.hero-title {
+.hero-container .hero-title {
   max-width: 496px
   font-size: 56px;
   line-height: 1.07;
@@ -84,7 +84,7 @@ body {
   color: #ffffff;
 }
 
-.hero-button {
+.hero-container .hero-button {
   display: block;
   min-width: 169px;
   height: 56px;
