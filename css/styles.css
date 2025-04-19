@@ -3,25 +3,30 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+
 /* Header genel stiller */
 .header-container {
-  border-bottom: 1px solid #e7e9fc
+  border-bottom: 1px solid #e7e9fc;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
 }
+
 .header-nav {
-  'display: flex;
+  display: flex;
   align-items: center;
 }
+
 .header-container .header-nav .logo {
   margin-right: 76px;
 }
+
 .header-container .header-nav .nav-list {
   display: flex;
-  gap:40px;
+  gap: 40px;
 }
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -53,8 +58,8 @@ body {
 /* Address kısmı */
 .header-container .contact-info {
   font-style: normal;
-  display:flex;
-  gap:40px;
+  display: flex;
+  gap: 40px;
 }
 
 .contact-link {
@@ -72,13 +77,15 @@ body {
 /* Section 1 */
 .hero-section {
   background-color: #2e2f42;
-  padding: 188px 0;
+  width: 1440px;
+  height: 600px;
 }
 
 .hero-container .hero-title {
-  max-width: 496px
+  font-weight: 700;
+  width: 496px;
   font-size: 56px;
-  line-height: 1.07;
+  line-height: 60px;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -86,38 +93,39 @@ body {
 
 .hero-container .hero-button {
   display: block;
-  min-width: 169px;
+  width: 169px;
   height: 56px;
-  border: none;
   border-radius: 4px;
-  cursor: pointer;
   color: #ffffff;
   background-color: #4d5ae5;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.04em;
   text-align: center;
-  cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
+
 /* Section 2 */
 .our-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
 .medium-text {
+  font-weight: 400;
+  width: 264px;
+  height: 72px;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -128,8 +136,10 @@ body {
 }
 
 .section-title {
+  width: 162px;
+  height: 40px;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 40px;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -150,9 +160,10 @@ body {
 
 .team-role {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
 
 /* Section 4 (Portfolio) */
