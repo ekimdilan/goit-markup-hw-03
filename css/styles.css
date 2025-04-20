@@ -1,222 +1,344 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
   background-color: #ffffff;
+  margin: 0;
 }
-
-/* Header genel stiller */
-.header-container {
-  border-bottom: 1px solid #e7e9fc;
+h1 {
+  font-weight: bold;
+  font-size: 56px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+h3 {
+  font-weight: medium;
+  font-size: 20px;
+}
+a {
+  font-size: 12px;
+  text-decoration: underline;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+.section {
+  padding: 120px 0;
+  width: 100%;
+}
+.container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
+  flex-direction: column;
 }
-
-.header-nav {
+/*header*/
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  padding: 0 15px;
+}
+/*
+.header-section > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
+.menu-nav {
   display: flex;
   align-items: center;
 }
-
-.header-container .header-nav .logo {
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4d5ae5;
   margin-right: 76px;
 }
-
-.header-container .header-nav .nav-list {
+.header_logo_second {
+  color: #2e2f42;
+}
+.menu {
   display: flex;
   gap: 40px;
 }
-
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-}
-
-.logo-span {
-  color: #2e2f42;
-}
-
-.nav-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.menu-list-item {
   padding: 24px 0;
 }
-
-.nav-link:hover,
-.nav-link:focus {
+.menu-list {
+  display: block;
+  text-decoration: none;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+}
+.menu-list:hover,
+.menu-list:focus {
   color: #404bbf;
 }
-
-/* Address kısmı */
-.header-container .contact-info {
+.contact_information {
   font-style: normal;
+  position: absolute;
+  right: 20px;
+}
+
+.contact {
   display: flex;
   gap: 40px;
 }
-
-.contact-link {
+.contact_list {
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
-
-.contact-link:hover,
-.contact-link:focus {
+.contact_list:hover,
+.contact_list:focus {
+  color: #404bbf;
+}
+menu:active {
+  text-decoration: underline;
+  text-decoration-color: #404bbf;
   color: #404bbf;
 }
 
-/* Section 1 */
-.hero-section {
+/*SLIDER*/
+.slider {
   background-color: #2e2f42;
-  width: 1440px;
-  height: 600px;
-}
-
-.hero-container .hero-title {
-  font-weight: 700;
-  width: 496px;
-  font-size: 56px;
-  line-height: 60px;
   text-align: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+  padding: 188px 0;
+  display: flex;
+  align-items: center;
 }
-
-.hero-container .hero-button {
+.slider_title {
+  color: #ffffff;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto;
+}
+.blue_button {
   display: block;
-  width: 169px;
+  margin: 0 auto;
+  margin-top: 48px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: white;
+  background-color: #4d5ae5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  border: none;
+  cursor: pointer;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
-  color: #ffffff;
-  background-color: #4d5ae5;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  text-align: center;
 }
-
-.hero-button:hover,
-.hero-button:focus {
+.blue_button:hover {
   background-color: #404bbf;
 }
-
-/* Section 2 */
-.our-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.blue_button:focus {
+  background-color: #404bbf;
 }
-
-.medium-text {
-  font-weight: 400;
-  width: 264px;
-  height: 72px;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #434455;
+.about-us-section {
+  padding: 120px 0;
 }
-
-/* Section 3 - Our Team */
-.our-team {
-  background-color: #f4f4fd;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
-.section-title {
-  width: 162px;
-  height: 40px;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
+.about_us {
+  display: flex;
+  margin-right: 24px;
+  margin-top: 72px;
+  gap: 24px;
 }
-
-.team-list {
-  background-color: #ffffff;
-}
-
-.team-member {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.team-role {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #434455;
-  text-align: center;
-}
-
-/* Section 4 (Portfolio) */
-/* Başlık */
-.portfolio-header {
-  font-size: 36px;
+.about-us-title {
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  letter-spacing: 0.02em;
 }
-
-/* Başlık */
-.portfolio-title {
+.about_us_subtitle {
   font-weight: 500;
-  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
-
-/* Açıklama Metni */
-.portfolio-text {
-  line-height: 1.5;
+.about_us_content {
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
-/* Footer genel stilleri */
+.about_us li {
+  width: calc((100% - 72px) / 4);
+}
+
+.our_team-section {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+.our_team_title {
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+.our-team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  gap: 24px;
+}
+.our_team_list {
+  background-color: #ffffff;
+  text-align: center;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our_team_list:last-child {
+  margin-right: 0;
+}
+.our_team_sub_title {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.our-team-box {
+  padding: 32px 0;
+}
+.our_team_content {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.our_team ul {
+  list-style: none outside none;
+}
+.our_team li {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.our_portfolio {
+  padding: 120px 0;
+}
+.our_portfolio > .container {
+  margin-bottom: 8px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-list-item {
+  flex: 1;
+  background-color: #ffffff;
+  flex-basis: calc((100% - 72px) / 4);
+}
+.portfolio-box {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
+.portfolio-title {
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+  text-align: center;
+}
+.portfolio-sub-title {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.portfolio-content {
+  letter-spacing: 0.02em;
+}
+
 .footer {
   background-color: #2e2f42;
-}
-
-/* Footer'daki logo */
-.footer .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
+  letter-spacing: 17.33;
+  padding: 100px 0;
 }
-
-/* Footer'daki <span> etiketi */
-.footer .logo-span {
-  color: #f4f4fd;
+.footer-information {
+  width: 264px;
 }
-
-/* Footer açıklama metni */
 .footer-text {
-  line-height: 1.5;
   color: #f4f4fd;
+  font-weight: 400;
+  line-height: 24px;
   letter-spacing: 0.02em;
+  max-width: 264px;
+}
+.footer-logo {
+  line-height: 1.17;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #4d5ae5;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.footer_logo_second {
+  color: #f4f4fd;
 }
